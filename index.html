@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js" defer ></script> 
+    <link rel="stylesheet" href="style.css">
+   <!--<script src="style.css"></script>--> 
+   <script src="//unpkg.com/alpinejs" defer></script>
+    
+</head>
+<body>
+    <h1>Learn about the DOM</h1>
+    <div class="myMessage" ></div>
+
+    <div>
+        <input type="text" class="theInputValue">
+        <button class="theMessageButton">Show message</button>
+    </div>
+    <hr>
+    <h2>List of fruits</h2>
+
+    <div>
+        <ul class="fruits" ></ul>
+    </div>
+    <hr>
+
+    <h2>Message widget</h2>
+    <div x-data="{message: "", enteredMessage: ""}" >
+        <div x-text="message"></div>
+        <button x-on:click="message = enteredMessage" >Show message</button>
+    </div>
+    <hr>
+    
+</body>
+</html>
